@@ -1,3 +1,4 @@
+import Controlleur.GetEmployeControlleur;
 import Entity.Employe;import UseCases.GetEmploye;
 
 import java.util.ArrayList;
@@ -14,8 +15,8 @@ public class Main {
     }
     public static void main(String [ ] args)
     {
-        GetEmploye getEmploye = new GetEmploye();
-        Employe employe = getEmploye.getById(3,employes);
+        GetEmployeControlleur getEmploye = new GetEmployeControlleur();
+        Employe employe = getEmploye.getEmploye(3,employes);
         System.out.println(employe.toString());
     }
 }

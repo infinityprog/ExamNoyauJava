@@ -14,6 +14,6 @@ public class GetEmploye {
                 return employe;
             }
         }
-        return new Employe();
+        return null;
     }
 }
