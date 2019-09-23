@@ -9,6 +9,9 @@ public class Employe {
     private String Status;
     private double salaire;
 
+    public Employe() {
+    }
+
     public Employe(int id, String nom, String prenom, String email, String status, double salaire) {
         this.id = id;
         this.nom = nom;
