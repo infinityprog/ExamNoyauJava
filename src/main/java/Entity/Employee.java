@@ -1,6 +1,6 @@
 package Entity;
 
-public class Employe {
+public class Employee {
 
     private int id;
     private String nom;
@@ -9,10 +9,10 @@ public class Employe {
     private String Status;
     private double salaire;
 
-    public Employe() {
+    public Employee() {
     }
 
-    public Employe(int id, String nom, String prenom, String email, String status, double salaire) {
+    public Employee(int id, String nom, String prenom, String email, String status, double salaire) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
