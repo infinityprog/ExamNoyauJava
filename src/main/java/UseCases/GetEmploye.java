@@ -1,19 +1,16 @@
 package UseCases;
 
 import Entity.Employe;
-import jdk.jfr.internal.Repository;
+import Gateway.getEmployeeGetway;
 
 import java.util.List;
 
 public class GetEmploye {
 
+    private getEmployeeGetway gateway;
 
-    public Employe getById(int id_search, List<Employe> employes){
-        for (Employe employe: employes ) {
-            if(employe.getId() == id_search){
-                return employe;
-            }
-        }
-        return null;
+    public Employe getById(int id_search, getEmployeeGetway gateway){
+       this.gateway = gateway;
+        return this.gateway.getEmployeByID(id_search);
     }
 }
